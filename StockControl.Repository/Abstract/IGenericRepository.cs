@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace StockControl.Repository.Abstract
 {
-    public interface IGenericRepository<T> where T : BaseEntity // Base Entity'den inherit alan classlar
+    public interface IGenericRepository<T> where T : BaseEntity // Base Entity'den inherit olan classlar
     {
         // Methodlarımızın başlıklarını tanımlayacağız. Repositorydeki methodlar, işlemi gerçekleştirecek methodlar. Service katmanında bunu uygulamaya taşıyacağımız methodları yazacağız.
         bool Add(T item);
