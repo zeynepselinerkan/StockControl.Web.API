@@ -27,7 +27,7 @@ namespace StockControl.Repository.Abstract
         List<T> GetAll();
         IQueryable<T> GetAll(params Expression<Func<T, object>>[] includes);// IQueryable ile collection dönüyor.
         bool Activate(int id);
-        bool Any(Expression<Func<T, bool>>[] exp);
+        bool Any(Expression<Func<T, bool>> exp);
         int Save(); // Kaç satırda işlem yapıldığını döner. SaveChanges methodunun barındırdığı method.
         void DetachEntity(T item); // İlgili entityi takip etmeyi bırak. DB de entityle işlem yapınca başka işlem yapamıyorum. Takibi bırakmak gerekiyor.
 
